@@ -12,4 +12,5 @@ Nama : {{ $nama }} <br>
 Alamat : {{ $alamat }}<br>
 Umur : {{ $umur }}
     </p>
+    <a href="showjam/{{ date('G:i:s') }}">Klik di sini</a>
 </body>
