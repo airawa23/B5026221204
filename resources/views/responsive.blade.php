@@ -55,7 +55,6 @@
             </div>
             <div class="col-6 border">
                 <img src="undraw.png" width="100%">
-
             </div>
         </div>
     </div>
