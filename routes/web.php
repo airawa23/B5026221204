@@ -65,3 +65,13 @@ Route::post('/pegawai/update','App\Http\Controllers\PegawaiController@update');
 Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus');
 
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
+
+//route SepedaController
+Route::get('/sepeda','App\Http\Controllers\SepedaController@indexsepeda');
+Route::get('/sepeda/store','App\Http\Controllers\SepedaController@store');
+
+//route NilaiController
+Route::get('/nilai','App\Http\Controllers\NilaiController@indexnilai');
+Route::post('/nilai/store','App\Http\Controllers\NilaiController@store');
+Route::get('/nilai/tambahnilai','App\Http\Controllers\NilaiController@tambahnilai');
+

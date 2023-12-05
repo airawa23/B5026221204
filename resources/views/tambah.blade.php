@@ -23,7 +23,7 @@
         <div class="form-group row">
             <label for="jabatan" class="col-xs-3 col-form-label mr-2">Jabatan</label>
             <div class="col-xs-9">
-                <input type="text" class="form-control" id="jabatan" name="jabatan">
+                <input type="text" class="form-control" id="jabatan" name="jabatan" required>
             </div>
         </div>
         <div class="form-group row">
