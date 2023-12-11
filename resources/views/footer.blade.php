@@ -1,3 +1,3 @@
 <footer>
-<center>Hak Cipta oleh Airlangga Bayu Taqwa</center>
+<center>© Airlangga Bayu Taqwa, 2023</center>
 </footer>
