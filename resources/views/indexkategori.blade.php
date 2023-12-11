@@ -1,18 +1,20 @@
 @extends('master')
 
-@section('title', 'pilih Kategori')
+@section('title', 'Kategori')
 
 @section('konten')
-
-<p>Pilih Kategori</p>
-{{-- <form action="/kategori/store" method="post" class="form-horizontal"> --}}
-    <select name="nama">
-        <option  value="1">Elektronik</option>
-        <option value="2">Rumah Tangga</option>
-        <option value="3">Komputer</option>
-    </select>
-{{-- </form> --}}
-    <br><br>
-    <a href="/kategori/kirim" class="btn btn-primary">KIRIM</a>
-    {{-- {{ $kategori->links() }} --}}
+<form action="/kategori/kirim" method="POST">
+    @csrf
+    <div class="form-group">
+        <label for="kategori">Pilih Kategori</label>
+        <select name="kategori" id="kategori" class="form-control">
+            @foreach($kategori as $k)
+                <option value="{{ $k->ID }}">
+                    {{ $k->Nama }}
+                </option>
+            @endforeach
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Kirim</button>
+</form>
 @endsection

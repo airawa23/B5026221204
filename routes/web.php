@@ -78,5 +78,5 @@ Route::get('/nilai/tambahnilai','App\Http\Controllers\NilaiController@tambahnila
 //route KategoriController
 Route::get('/kategori','App\Http\Controllers\KategoriController@indexkategori');
 Route::post('/kategori/store','App\Http\Controllers\KategoriController@store');
-Route::get('/kategori/kirim','App\Http\Controllers\KategoriController@kirim');
+Route::post('/kategori/kirim','App\Http\Controllers\KategoriController@kirim');
 
